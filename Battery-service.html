@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>TNT Motors - Car Care Center</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body class="index-page">
+  <header  class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <div class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="TNT MOTORS">
+      </div>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><a href="service.html" class="active"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Brake-service.html">Brake Service</a></li>
+              <li><a href="General-service.html">General Service</a></li>
+              <li><a href="Towing-service.html">Towing Service</a></li>
+              <li><a href="Battery-service.html" class="active">Battery Service</a></li>
+              <li><a href="Body-painting-service.html">Body-Painting Service</a></li>
+              <li><a href="Suspension.html">Suspension Service</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" >Contact Us</a></li>
+          <a href="tel:9842451517" class="btn-getstarted">Enquire Now</a>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+       
+      </nav>
+     
+    </div>
+  </header>
+  <div class="breadcrumb-container">
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a> 
+      <span class="breadcrumb-separator">/</span>
+      <a href="service.html">Services</a>
+      <span class="breadcrumb-separator">/</span>
+      <a href="Battery-service.html">Battery Service</a>
+    </nav>
+  </div>
+
+
+
+
+
+
+
+
+
+  <style>
+ 
+/* Battery Services Section */
+.battery-services {
+  background: linear-gradient(to bottom right, #e6f0ff, #c9e5fc);
+  padding: 70px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #1a1a1a;
+}
+
+.battery-services .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  color: #003366;
+  font-weight: 700;
+  margin-bottom: 12px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px; /* Space between text and underline */
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #ff0000; /* Change to match your theme */
+  border-radius: 2px;
+  transition: width 0.3s ease-in-out;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.service-card {
+  background: #ffffffcc;
+  backdrop-filter: blur(8px);
+  padding: 30px 25px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.service-card .emoji {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* ======================== */
+/* Media Queries - 1024px   */
+/* ======================== */
+@media (max-width: 1024px) {
+
+  .section-title {
+    font-size: 2.4rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .services-grid {
+    gap: 35px;
+  }
+
+  .service-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .service-card p {
+    font-size: 0.98rem;
+  }
+}
+
+/* ======================== */
+/* Media Queries - 768px    */
+/* ======================== */
+@media (max-width: 768px) {
+
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .section-title::after {
+    width: 70%; /* Make the underline percentage-based */
+    left: 50%;
+    transform: translateX(-50%); /* Center the underline */
+  }
+
+  .section-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+  }
+
+  .service-card {
+    padding: 25px 20px;
+  }
+
+  .service-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .service-card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* ======================== */
+/* Media Queries - 480px    */
+/* ======================== */
+@media (max-width: 480px) {
+  
+  .battery-services {
+    padding: 40px 15px; /* Reduced top padding */
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+  }
+
+  .section-title::after {
+    width: 60%; /* Adjusted for smaller screens */
+    left: 50%;
+    transform: translateX(-50%); /* Center the underline */
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .service-card {
+    padding: 20px 15px;
+  }
+
+  .service-card .emoji {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
+}
+
+
+    </style>
+    
+
+
+<section class="battery-services">
+  <div class="container">
+  <h1 class="section-title">BATTERY SERVICE</h1>
+  <p class="section-subtitle">Keeping your power reliable and ready</p>
+  
+  <div class="services-grid">
+  <div class="service-card">
+  <span class="emoji">🔋</span>
+  <h3>Testing & Diagnosis</h3>
+  <p>Quick checks and full diagnostics to assess battery condition.</p>
+  </div>
+  <div class="service-card">
+  <span class="emoji">🔧</span>
+  <h3>Battery Replacement</h3>
+  <p>High-quality batteries replaced and fitted by pros.</p>
+  </div>
+  <div class="service-card">
+  <span class="emoji">⚡</span>
+  <h3>Charging System Check</h3>
+  <p>We test alternator & starter performance to prevent surprises.</p>
+  </div>
+  <div class="service-card">
+  <span class="emoji">♻️</span>
+  <h3>Battery Recycling</h3>
+  <p>Eco-friendly disposal and recycling of old batteries.</p>
+  </div>
+  </div>
+  </div>
+  </section>
+
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <img src="assets/img/footer-logo.png" alt="TNT Motors Logo" class="footer-logo-img">
+          </a>
+          
+          <div class="footer-contact pt-3">
+            <p>Karur Bypass Rd, opp. to kalaingar arivalayam,Annamalai Nagar,Killa Chinthamani, Tiruchirappalli, Tamil Nadu 620002</p> 
+        
+            
+              
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 98424 51517</span></p>
+            <p><strong>Email:</strong> <span>info@tntmotors.in</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="about.html">About Us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="service.html">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="blog.html">Blog</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="Brake-service.html">Brake Service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="General-service.html">General Service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Towing-service.html">Towing Service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Battery-service.html">Battery Service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Body-painting-service.html">Body-Painting Service</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>Stay connected with us on social media – Follow, share, and engage!</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">TNT Motors |</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+      </div>
+    </div>
+
+  </footer>
+ <!-- WhatsApp Floating Button -->
+ <a href="https://wa.me/9842451517?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." 
+ class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+<i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- WhatsApp Button CSS -->
+<style>
+.whatsapp-float {
+  position: fixed;
+  bottom: 80px; /* Increased from 20px to 80px */
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  z-index: 1000;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-float:hover {
+  background-color: #128C7E;
+  color: white;
+  text-decoration: none;
+}
+
+/* Optional: make sure scroll-top stays at the bottom */
+#scroll-top {
+  bottom: 20px;
+  right: 20px;
+  z-index: 999; /* Slightly below WhatsApp button */
+}
+</style>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

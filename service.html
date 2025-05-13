@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>TNT Motors - Car Care Center</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/fav.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="service.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="index-page">
+
+  <header  class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <div class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="TNT MOTORS">
+      </div>
+      
+      
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+       
+          <li><a href="blog.html">Blog</a></li>
+         
+          <li class="dropdown"><a href="service.html" class="active"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Brake-service.html">Brake Service</a></li>
+              <li><a href="General-service.html">General Service</a></li>
+              <li><a href="Towing-service.html">Towing Service</a></li>
+              <li><a href="Battery-service.html">Battery Service</a></li>
+              <li><a href="Body-painting-service.html">Body-Painting Service</a></li>
+              <li><a href="Suspension.html">Suspension Service</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" >Contact Us</a></li>
+          <a href="tel:9842451517" class="btn-getstarted">Enquire Now</a>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    
+    </div>
+  </header>
+  <div class="breadcrumb-container">
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a> 
+      <span class="breadcrumb-separator">/</span>
+      <a href="service.html">Services</a>
+    </nav>
+  </div>
+
+  <style>
+    .heading {
+      text-align: center;
+      margin-top: 20px;
+      opacity: 0;
+    }
+
+    .heading h1 {
+      font-weight: 100;
+      color: #0e8df0;
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .heading a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .highlight {
+      color: #1d8ef7;
+    }
+
+    .grid {
+      display: grid;
+      gap: 25px;
+      grid-template-columns: auto auto auto;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      padding: 20px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.1em;
+      font-weight: 700;
+    }
+
+    .card p {
+      font-size: 0.95em;
+      color: #444;
+      width: 90%;
+    }
+
+    .corner-reveal {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      background: transparent;
+      border-top: 100px solid #1d69f7;
+      border-left: 100px solid transparent;
+      z-index: 2;
+      transition: transform 0.5s ease;
+    }
+
+    .card:hover .corner-reveal {
+      transform: scale(1.3) rotate(15deg);
+    }
+
+    .reveal-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px;
+      height: 100px;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: 1;
+    }
+
+    .card:hover .reveal-image {
+      opacity: 1;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 16px;
+      }
+    }
+
+    .nav-pills .nav-link.active {
+      background-color: #0e8dfc !important;
+      color: #000000 !important;
+    }
+
+    .nav-pills .nav-link i {
+      color: #0c0e0f;
+      transition: color 0.3s ease;
+    }
+
+    .nav-pills .nav-link.active i {
+      color: #ffffff !important;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 40px;
+    }
+    /* Scrollable Buttons Column */
+.button-scroll {
+  max-height: 350px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.button-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.button-scroll::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.button-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Button Spacing */
+.nav-pills .nav-link {
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+  background: #0e8dfc;
+  color: #fff;
+  transform: translateX(4px);
+}
+.other-services {
+    padding: 60px 20px;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Section Title */
+  .other-services h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #0e8dfc;
+  }
+  
+  /* Service Card */
+  .service-card {
+    position: relative;
+    background: #fff;
+    padding: 20px 20px 20px 60px;
+    border: 2px solid #c92609de;
+    /* border: 2px solid ; Border added */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    perspective: 1000px; /* Enables 3D transformations */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* 3D Flip Effect */
+  .service-card .card-inner {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  
+  .service-card:hover .card-inner {
+    transform: rotateY(180deg); /* Flip on hover */
+  }
+  
+  .service-card .card-front, .service-card .card-back {
+    backface-visibility: hidden; /* Ensures the back of the card is hidden */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .service-card .card-front {
+    z-index: 1;
+  }
+  
+  .service-card .card-back {
+    background-color: #0e8dfc;
+    color: white;
+    transform: rotateY(180deg);
+    z-index: 0;
+  }
+  
+  /* Hover Effects for Icon and Text */
+  .service-card:hover .service-icon {
+    transform: scale(1.1); /* Slight scale-up effect for the icon */
+  }
+  
+  .service-card:hover .ms-4 h5 {
+    transform: translateY(-5px);
+    opacity: 0.9;
+  }
+  
+  .service-card .service-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  /* Text Content */
+  .service-card h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .service-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Hover Animation */
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Orange Triangle Icon */
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 60px solid #c92609de;
+    border-right: 60px solid transparent;
+    border-radius: 12px 0 0 0;
+  }
+  
+  /* Icon Inside Triangle */
+  .service-card .icon {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    font-size: 20px;
+    color: white;
+    z-index: 1;
+  }
+  
+  /* Service Grid */
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .service-section {
+    background-color: #dddcdc; /* Example background color */
+    padding: 50px 0; /* Padding for top and bottom */
+  }
+
+  .service-section .container {
+    max-width: 1200px; /* Adjust width */
+  }
+/* Adding red underline with downward offset */
+.service-text {
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: #0447ff; /* You can change the color if needed */
+  text-align: center;
+  text-decoration: underline; /* Underline added here */
+  text-decoration-color: rgb(136, 3, 9); /* Red underline */
+  text-underline-offset: 8px; /* Adjust the offset value to move it down */
+}
+
+/* 1024px breakpoint */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .service-card {
+    padding: 18px;
+  }
+
+  .nav-pills .nav-link {
+    padding: 10px 14px;
+  }
+
+  .service-card h5 {
+    font-size: 14px;
+  }
+
+  /* For other sections if needed */
+  .service-section {
+    padding: 40px 15px;
+  }
+}
+
+/* 768px breakpoint */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .heading h1 {
+    font-size: 1.8rem;
+  }
+
+  .service-card {
+    padding: 16px;
+  }
+
+  .nav-pills .nav-link {
+    padding: 8px 12px;
+  }
+
+  .service-card h5 {
+    font-size: 13px;
+  }
+
+  /* Adjust button columns for better display */
+  .button-scroll {
+    max-height: 300px;
+  }
+
+  /* Other service section padding */
+  .service-section {
+    padding: 35px 10px;
+  }
+}
+
+/* 480px breakpoint */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .heading h1 {
+    font-size: 1.5rem;
+  }
+
+  .service-card {
+    padding: 12px;
+  }
+
+  .nav-pills .nav-link {
+    padding: 6px 10px;
+  }
+
+  .service-card h5 {
+    font-size: 12px;
+  }
+
+  /* Adjust section titles */
+  .service-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .service-section {
+    padding: 30px 5px;
+  }
+}
+
+  </style>
+
+<section class="service-section">
+  <div class="container-xxl service py-5">
+    <div class="container">
+     
+          <div class="text-center">
+            <h1 class="service-text"><span class="head">OUR SERVICES</span></h1>
+          </div>
+          <!-- Start of Services Section -->
+<div class="container-xxl py-5">
+  <div class="container">
+   
+    <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+      <!-- Buttons Column -->
+      <div class="col-lg-4">
+        <div class="nav w-100 nav-pills me-4 button-scroll">
+          <button class="nav-link w-100 d-flex align-items-center bg-light text-start p-3 mb-3" data-bs-toggle="pill"
+            data-bs-target="#tab-pane-1" type="button">
+            <i class="fa fa-wrench fa-2x me-3"></i>
+            <h4 class="m-0 fs-5">Brake Service</h4>
+          </button>
+          <button class="nav-link w-100 d-flex align-items-center bg-light text-start p-3 mb-3" data-bs-toggle="pill"
+            data-bs-target="#tab-pane-2" type="button">
+            <i class="fa fa-cogs fa-2x me-3"></i>
+            <h4 class="m-0 fs-5">General Service</h4>
+          </button>
+          <button class="nav-link w-100 d-flex align-items-center bg-light text-start p-3 mb-3 active" data-bs-toggle="pill"
+            data-bs-target="#tab-pane-3" type="button">
+            <i class="fa fa-car-side fa-2x me-3"></i>
+            <h4 class="m-0 fs-5">Towing Service</h4>
+          </button>
+          <button class="nav-link w-100 d-flex align-items-center bg-light text-start p-3 mb-3" data-bs-toggle="pill"
+            data-bs-target="#tab-pane-4" type="button">
+            <i class="fa fa-car fa-2x me-3"></i>
+            <h4 class="m-0 fs-5">Battery Service</h4>
+          </button>
+          <button class="nav-link w-100 d-flex align-items-center bg-light text-start p-3 mb-3" data-bs-toggle="pill"
+            data-bs-target="#tab-pane-5" type="button">
+            <i class="fa fa-paint-brush fa-2x me-3"></i>
+            <h4 class="m-0 fs-5">Body Painting</h4>
+          </button>
+          <button class="nav-link w-100 d-flex align-items-center bg-light text-start p-3 mb-3" data-bs-toggle="pill"
+            data-bs-target="#tab-pane-6" type="button">
+            <i class="fa fa-cogs fa-2x me-3"></i>
+            <h4 class="m-0 fs-5">Suspension Service</h4>
+          </button>
+        </div>
+      </div>
+
+  <!-- Content Column --> 
+<div class="col-lg-8">
+  <div class="tab-content w-100">
+
+    <!-- Tab Pane 1 -->
+    <div class="tab-pane fade" id="tab-pane-1">
+      <div class="row g-4">
+        <div class="col-md-6" style="min-height: 350px;">
+          <div class="position-relative h-100">
+            <img class="position-absolute img-fluid w-100 h-100" src="./assets/img/brake.jpg" style="object-fit: cover;" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h5 style="font-weight: bold; color: #0e8dfc;">🛑 Brake Service</h5>
+          <p>Your safety is paramount. We ensure reliable stopping power with high-quality components and skilled inspection.</p>
+          <ul style="list-style-type: '✅ '; padding-left: 1.5rem;">
+            <li>Brake pad replacement</li>
+            <li>Rotor resurfacing or replacement</li>
+            <li>Brake fluid refill & bleeding</li>
+            <li>ABS system diagnostics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Pane 2 -->
+    <div class="tab-pane fade" id="tab-pane-2">
+      <div class="row g-4">
+        <div class="col-md-6" style="min-height: 350px;">
+          <div class="position-relative h-100">
+            <img class="position-absolute img-fluid w-100 h-100" src="./assets/img/general.jpg" style="object-fit: cover;" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h5 style="font-weight: bold; color: #0e8dfc;">🛠️ General Service</h5>
+          <p>Routine servicing helps your car run smoother and last longer.</p>
+          <ul style="list-style-type: '✅ '; padding-left: 1.5rem;">
+            <li>Engine oil & filter change</li>
+            <li>Air & cabin filter replacement</li>
+            <li>All fluid levels checked & topped up</li>
+            <li>Comprehensive vehicle inspection</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Pane 3 -->
+    <div class="tab-pane fade show active" id="tab-pane-3">
+      <div class="row g-4">
+        <div class="col-md-6" style="min-height: 350px;">
+          <div class="position-relative h-100">
+            <img class="position-absolute img-fluid w-100 h-100" src="./assets/img/towing.jpg" style="object-fit: cover;" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h5 style="font-weight: bold; color: #0e8dfc;">🚗 Towing Service</h5>
+          <p>Fast and reliable roadside support available 24/7.</p>
+          <ul style="list-style-type: '✅ '; padding-left: 1.5rem;">
+            <li>Emergency breakdown towing</li>
+            <li>Flatbed towing for luxury vehicles</li>
+            <li>Rapid citywide response</li>
+            <li>Transparent & affordable pricing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Pane 4 -->
+    <div class="tab-pane fade" id="tab-pane-4">
+      <div class="row g-4">
+        <div class="col-md-6" style="min-height: 350px;">
+          <div class="position-relative h-100">
+            <img class="position-absolute img-fluid w-100 h-100" src="./assets/img/battery.jpg" style="object-fit: cover;" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h5 style="font-weight: bold; color: #0e8dfc;">🔋 Battery Service</h5>
+          <p>Ensure reliable starts and uninterrupted power for all your vehicle electronics.</p>
+          <ul style="list-style-type: '✅ '; padding-left: 1.5rem;">
+            <li>Battery performance testing</li>
+            <li>Terminal cleaning & corrosion removal</li>
+            <li>New battery installation</li>
+            <li>Jump-start assistance on call</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Pane 5 -->
+    <div class="tab-pane fade" id="tab-pane-5">
+      <div class="row g-4">
+        <div class="col-md-6" style="min-height: 350px;">
+          <div class="position-relative h-100">
+            <img class="position-absolute img-fluid w-100 h-100" src="./assets/img/body-painting.jpg" style="object-fit: cover;" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h5 style="font-weight: bold; color: #0e8dfc;">🎨 Body Painting Service</h5>
+          <p>Give your car a fresh new look or restore its original shine.</p>
+          <ul style="list-style-type: '✅ '; padding-left: 1.5rem;">
+            <li>Full-body paint jobs</li>
+            <li>Scratch & dent touch-up</li>
+            <li>Premium finish with oven baking</li>
+            <li>Custom paint options available</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Pane 6 -->
+    <div class="tab-pane fade" id="tab-pane-6">
+      <div class="row g-4">
+        <div class="col-md-6" style="min-height: 350px;">
+          <div class="position-relative h-100">
+            <img class="position-absolute img-fluid w-100 h-100" src="./assets/img/suspension.jpg" style="object-fit: cover;" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h5 style="font-weight: bold; color: #0e8dfc;">🛞 Suspension Service</h5>
+          <p>Enjoy a smoother ride and better handling with precision suspension service.</p>
+          <ul style="list-style-type: '✅ '; padding-left: 1.5rem;">
+            <li>Shock absorber replacements</li>
+            <li>Strut and spring repairs</li>
+            <li>Suspension alignment tuning</li>
+            <li>Suspension noise diagnosis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- End of Services Section -->
+
+
+<!-- Other Important Services Section -->
+<div class="container-xxl py-5">
+  <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h1 class="mb-5">Other Important <span class="text-primary">Services</span></h1>
+      </div>
+      <div class="row g-4">
+          <!-- Towing Service -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="service-card d-flex align-items-center">
+                  <div class="service-icon">
+                      <i class="fa fa-link fa-2x text-white"></i>
+                  </div>
+                  <div class="ms-4">
+                      <h5 class="mb-2">Towing Service</h5>
+                      <p class="mb-0">Our reliable towing service is a lifeline in times of need. We provide efficient and safe towing, your vehicle to safety promptly.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Clutch Service -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+              <div class="service-card d-flex align-items-center">
+                  <div class="service-icon">
+                      <i class="fa fa-wrench fa-2x text-white"></i>
+                  </div>
+                  <div class="ms-4">
+                      <h5 class="mb-2">Clutch Service</h5>
+                      <p class="mb-0">Our clutch service covers everything from adjustment to replacement, ensuring your vehicle's transmission performs flawlessly.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Electrical Service -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-card d-flex align-items-center">
+                  <div class="service-icon">
+                      <i class="fa fa-bolt fa-2x text-white"></i>
+                  </div>
+                  <div class="ms-4">
+                      <h5 class="mb-2">Electrical Service</h5>
+                      <p class="mb-0">Our electrical service addresses issues ranging from faulty wiring to malfunctioning components, restoring your car’s to peak performance.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Engine Decarbonization -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="service-card d-flex align-items-center">
+                  <div class="service-icon">
+                      <i class="fa fa-magic fa-2x text-white"></i>
+                  </div>
+                  <div class="ms-4">
+                      <h5 class="mb-2">Engine Decarbonization</h5>
+                      <p class="mb-0">Our engine decarbonization service removes carbon deposits, improving fuel efficiency, and enhancing overall engine performance.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Under Chassis Coating -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+              <div class="service-card d-flex align-items-center">
+                  <div class="service-icon">
+                      <i class="fa fa-paint-brush fa-2x text-white"></i>
+                  </div>
+                  <div class="ms-4">
+                      <h5 class="mb-2">Under Chassis Coating</h5>
+                      <p class="mb-0">Our under-chassis coating provides a protective shield, preventing rust from taking hold and ensuring your vehicle remains sturdy and reliable.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Multibrand Car Service -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-card d-flex align-items-center">
+                  <div class="service-icon">
+                      <i class="fa fa-project-diagram fa-2x text-white"></i>
+                  </div>
+                  <div class="ms-4">
+                      <h5 class="mb-2">Multibrand Car Service</h5>
+                      <p class="mb-0">Our expertise extends to all car brands and models, guaranteeing that you receive the same high level of service regardless of your vehicle's make.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Wheel Alignment -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="service-card d-flex align-items-center">
+                  <div class="service-icon">
+                      <i class="fa fa-sliders-h fa-2x text-white"></i>
+                  </div>
+                  <div class="ms-4">
+                      <h5 class="mb-2">Wheel Alignment</h5>
+                      <p class="mb-0">Our precision wheel alignment service ensures your vehicle tracks straight and handles well on the road.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Body Repair Service -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+              <div class="service-card d-flex align-items-center">
+                  <div class="service-icon">
+                      <i class="fa fa-tools fa-2x text-white"></i>
+                  </div>
+                  <div class="ms-4">
+                      <h5 class="mb-2">Body Repair Service</h5>
+                      <p class="mb-0">Our body repair service restores your vehicle's aesthetics and structural integrity. Our service to bring your vehicle back to its original condition.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Windshield Glass Replacement -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-card d-flex align-items-center">
+                  <div class="service-icon">
+                      <i class="fa fa-window-maximize fa-2x text-white"></i>
+                  </div>
+                  <div class="ms-4">
+                      <h5 class="mb-2">Windshield Glass Replacement</h5>
+                      <p class="mb-0">Our windshield glass replacement service uses high-quality materials and expert installation to ensure clear visibility.</p>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+</section>
+
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <img src="assets/img/footer-logo.png" alt="TNT Motors Logo" class="footer-logo-img">
+          </a>
+          
+          <div class="footer-contact pt-3">
+            <p>Karur Bypass Rd, opp. to kalaingar arivalayam,Annamalai Nagar,Killa Chinthamani, Tiruchirappalli, Tamil Nadu 620002</p> 
+        
+            
+              
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 98424 51517</span></p>
+            <p><strong>Email:</strong> <span>info@tntmotors.in</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="about.html">About Us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="service.html">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="blog.html">Blog</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="Brake-service.html">Brake Service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="General-service.html">General Service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Towing-service.html">Towing Service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Battery-service.html">Battery Service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Body-painting-service.html">Body-Painting Service</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>Stay connected with us on social media – Follow, share, and engage!</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">TNT Motors |</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+      </div>
+    </div>
+
+  </footer>
+ <!-- WhatsApp Floating Button -->
+ <a href="https://wa.me/9842451517?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." 
+ class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+<i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- WhatsApp Button CSS -->
+<style>
+.whatsapp-float {
+  position: fixed;
+  bottom: 80px; /* Increased from 20px to 80px */
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  z-index: 1000;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-float:hover {
+  background-color: #128C7E;
+  color: white;
+  text-decoration: none;
+}
+
+/* Optional: make sure scroll-top stays at the bottom */
+#scroll-top {
+  bottom: 20px;
+  right: 20px;
+  z-index: 999; /* Slightly below WhatsApp button */
+}
+</style>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
